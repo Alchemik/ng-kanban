@@ -15,22 +15,21 @@ import { Task } from './models/task.model';
 import { BoardDataService } from './services/board-data/board-data.service';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterOutlet,
-    SidebarComponent,
-    ThemeTogglerComponent,
-    NavbarComponent,
-    ProjectBoardComponent,
-    SidebarToggleComponent,
-    BoardModalComponent,
-    DeleteModalComponent,
-    TaskModalComponent,
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-root',
+    imports: [
+        CommonModule,
+        RouterOutlet,
+        SidebarComponent,
+        ThemeTogglerComponent,
+        NavbarComponent,
+        ProjectBoardComponent,
+        SidebarToggleComponent,
+        BoardModalComponent,
+        DeleteModalComponent,
+        TaskModalComponent,
+    ],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
   darkMode = false;

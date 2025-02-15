@@ -4,11 +4,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import { Board } from '../../models/board.model';
 
 @Component({
-  selector: 'app-navbar',
-  standalone: true,
-  imports: [NgClass, NgIf, NgFor, MatMenuModule],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss',
+    selector: 'app-navbar',
+    imports: [NgClass, NgIf, NgFor, MatMenuModule],
+    templateUrl: './navbar.component.html',
+    styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
   @Input() opened!: boolean;

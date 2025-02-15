@@ -11,11 +11,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Board } from '../../../models/board.model';
 
 @Component({
-  selector: 'app-board-modal',
-  standalone: true,
-  imports: [ReactiveFormsModule, NgIf, NgFor, NgClass],
-  templateUrl: './board-modal.component.html',
-  styleUrl: './board-modal.component.scss',
+    selector: 'app-board-modal',
+    imports: [ReactiveFormsModule, NgIf, NgFor, NgClass],
+    templateUrl: './board-modal.component.html',
+    styleUrl: './board-modal.component.scss'
 })
 export class BoardModalComponent implements OnInit {
   form!: FormGroup;

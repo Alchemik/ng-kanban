@@ -14,19 +14,18 @@ import { ViewTaskModalComponent } from '../modals/view-task-modal/view-task-moda
 import { TaskOption } from '../../models/modal.model';
 
 @Component({
-  selector: 'app-project-board',
-  standalone: true,
-  imports: [
-    NgIf,
-    NgFor,
-    NgStyle,
-    NgClass,
-    TaskCardComponent,
-    DragDropModule,
-    ViewTaskModalComponent,
-  ],
-  templateUrl: './project-board.component.html',
-  styleUrl: './project-board.component.scss',
+    selector: 'app-project-board',
+    imports: [
+        NgIf,
+        NgFor,
+        NgStyle,
+        NgClass,
+        TaskCardComponent,
+        DragDropModule,
+        ViewTaskModalComponent,
+    ],
+    templateUrl: './project-board.component.html',
+    styleUrl: './project-board.component.scss'
 })
 export class ProjectBoardComponent {
   colors = ['#49C4E5', '#8471F2', '#67E2AE'];

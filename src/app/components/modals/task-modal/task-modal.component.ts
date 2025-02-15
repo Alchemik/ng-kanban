@@ -14,11 +14,10 @@ import { Task } from '../../../models/task.model';
 import { SubTask } from '../../../models/subTask.model';
 
 @Component({
-  selector: 'app-task-modal',
-  standalone: true,
-  imports: [NgFor, NgClass, NgIf, ReactiveFormsModule, MatMenuModule],
-  templateUrl: './task-modal.component.html',
-  styleUrl: './task-modal.component.scss',
+    selector: 'app-task-modal',
+    imports: [NgFor, NgClass, NgIf, ReactiveFormsModule, MatMenuModule],
+    templateUrl: './task-modal.component.html',
+    styleUrl: './task-modal.component.scss'
 })
 export class TaskModalComponent implements OnInit {
   @ViewChild(MatMenuTrigger) trigger!: MatMenuTrigger;

@@ -3,11 +3,10 @@ import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-delete-modal',
-  standalone: true,
-  imports: [NgClass, NgIf],
-  templateUrl: './delete-modal.component.html',
-  styleUrl: './delete-modal.component.scss',
+    selector: 'app-delete-modal',
+    imports: [NgClass, NgIf],
+    templateUrl: './delete-modal.component.html',
+    styleUrl: './delete-modal.component.scss'
 })
 export class DeleteModalComponent {
   constructor(

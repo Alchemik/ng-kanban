@@ -4,11 +4,10 @@ import { ReactiveFormsModule, FormControl } from '@angular/forms';
 import { tap, Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-theme-toggler',
-  standalone: true,
-  imports: [ReactiveFormsModule, NgIf, AsyncPipe],
-  templateUrl: './theme-toggler.component.html',
-  styleUrl: './theme-toggler.component.scss',
+    selector: 'app-theme-toggler',
+    imports: [ReactiveFormsModule, NgIf, AsyncPipe],
+    templateUrl: './theme-toggler.component.html',
+    styleUrl: './theme-toggler.component.scss'
 })
 export class ThemeTogglerComponent implements OnInit {
   @Output() enableDarkMode = new EventEmitter<boolean>();
