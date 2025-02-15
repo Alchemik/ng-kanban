@@ -27,17 +27,17 @@
     "@angular/ssr": "^19.1.7",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
+    "tslib": "^2.6.2",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.1.7",
-    "@angular-eslint/builder": "^18.4.3",
-    "@angular-eslint/eslint-plugin": "^18.4.3",
+    "@angular-eslint/builder": "^19.1.0",
+    "@angular-eslint/eslint-plugin": "^19.1.0",
     "@angular-eslint/eslint-plugin-template": "^19.1.0",
-    "@angular-eslint/schematics": "^18.4.3",
-    "@angular-eslint/template-parser": "^18.4.3",
-    "@angular-eslint/utils": "^18.4.3",
+    "@angular-eslint/schematics": "^19.1.0",
+    "@angular-eslint/template-parser": "^19.1.0",
+    "@angular-eslint/utils": "^19.1.0",
     "@angular/cli": "^19.1.7",
     "@angular/compiler-cli": "^19.1.6",
     "@tailwindcss/forms": "^0.5.7",
@@ -58,6 +58,6 @@
     "prettier": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.9",
     "tailwindcss": "^3.3.5",
-    "typescript": "~5.5.4"
+    "typescript": "~5.5.2"
   }
 }
