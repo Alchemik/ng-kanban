@@ -1,6 +1,6 @@
 # Kanban Task Management Web App 🚀
 
-Welcome to our Kanban Task Management web app, a powerhouse built with Angular version 17.0.5 and styled with the magic of Tailwind CSS. 🎨 This app is your ticket to organizing tasks with flair!
+Welcome to our Kanban Task Management web app, a powerhouse built with Angular version 19.1.6 and styled with the magic of Tailwind CSS. 🎨 This app is your ticket to organizing tasks with flair!
 
 ## Features 🌟
 
