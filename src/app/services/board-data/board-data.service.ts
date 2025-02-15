@@ -23,8 +23,11 @@ export class BoardDataService {
     this.boards().length > 0 ? this.boards()[this.currentIdx()] : null,
   );
 
+  // Prevents overwriting localStorage with [] when no data exists.
+  // effect() runs automatically whenever this.boards() changes. If this.platformId is not a browser,
+  // localStorage.setItem still executes.
   private saveBoards = effect(() => {
-    if (isPlatformBrowser(this.platformId)) {
+    if (isPlatformBrowser(this.platformId) && this.boards().length > 0) {
       localStorage.setItem('boards', JSON.stringify(this.boards()));
     }
   });
@@ -35,20 +38,23 @@ export class BoardDataService {
   ) {}
 
   getBoards(): void {
-    let userBoards!: Board[] | null;
+    let userBoards: Board[] = [];
 
     if (isPlatformBrowser(this.platformId)) {
-      userBoards = JSON.parse(localStorage.getItem('boards') as string) as
-        | Board[]
-        | null;
+      try {
+        const storedBoards = localStorage.getItem('boards');
+        userBoards = storedBoards ? JSON.parse(storedBoards) : [];
+      } catch (error) {
+        console.error('Error loading boards from localStorage:', error);
+      }
     }
 
-    if (userBoards) {
+    if (userBoards.length > 0) {
       this.boards.set(userBoards);
     } else {
-      this.boardHttp
-        .getBoards()
-        .subscribe((res) => this.boards.set(res.boards));
+      this.boardHttp.getBoards().subscribe((res) => {
+        this.boards.set(res.boards);
+      });
     }
   }
 
