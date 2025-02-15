@@ -22,7 +22,6 @@ import { TaskOption } from '../../models/modal.model';
         NgClass,
         TaskCardComponent,
         DragDropModule,
-        ViewTaskModalComponent,
     ],
     templateUrl: './project-board.component.html',
     styleUrl: './project-board.component.scss'

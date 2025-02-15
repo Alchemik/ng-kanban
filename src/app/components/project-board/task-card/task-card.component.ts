@@ -4,6 +4,7 @@ import { SubTask } from '../../../models/subTask.model';
 
 @Component({
     selector: 'app-task-card',
+    standalone: true,
     imports: [],
     templateUrl: './task-card.component.html',
     styleUrl: './task-card.component.scss'

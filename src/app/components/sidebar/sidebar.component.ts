@@ -10,7 +10,7 @@ import { Board } from '../../models/board.model';
     styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
-  @Input() boards!: Board[];
+  @Input() boards: Board[] = [];
   @Input() activeBoard!: Board | null;
   @Input() opened!: boolean;
   @Output() closeSidebar = new EventEmitter<void>();

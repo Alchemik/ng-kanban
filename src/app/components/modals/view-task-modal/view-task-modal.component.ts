@@ -34,7 +34,7 @@ export class ViewTaskModalComponent implements OnInit {
             ),
           }) as Column,
       )
-      .filter((column) => column.tasks.length > 0)[0];
+      .filter((column) => column.tasks.length > 0)[0] || { name: 'Default' };
   }
 
   updateSubtask(updateSubtask: SubTask): void {

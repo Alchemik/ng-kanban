@@ -12,7 +12,7 @@ import { Board } from '../../models/board.model';
 export class NavbarComponent {
   @Input() opened!: boolean;
   @Input() activeBoard!: Board | null;
-  @Input() boards!: Board[];
+  @Input() boards: Board[] = [];
   @Input() darkMode!: boolean;
   @Output() boardSelect = new EventEmitter<number>();
   @Output() boardAdd = new EventEmitter<void>();
